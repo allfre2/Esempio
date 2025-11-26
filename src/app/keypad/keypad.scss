@@ -1,0 +1,42 @@
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 130px;
+  margin: 20px auto;
+}
+
+.controls {
+  flex: 0 0 50%;
+}
+
+.action {
+    flex: 0 0 calc(50% - 12px);
+    height: 30px;
+    border-radius: 5px;
+    font-size: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.action:hover { opacity: 0.9; }
+
+.action:active { transform: scale(0.95); }
+
+.call-btn {
+    border-radius: 5px;
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.hangup-btn {
+    border-radius: 5px;
+    background-color: red;
+    cursor: pointer;
+}

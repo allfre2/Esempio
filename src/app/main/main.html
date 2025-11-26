@@ -1,0 +1,31 @@
+<div class="main">
+    <div class="title">
+        <h1>Esempio</h1>
+        <hr />
+        <br />
+        <article>
+            <a href="https://github.com/allfre2/Collegare">Collegare</a>
+            <br />
+            <a href="https://github.com/allfre2/Telefono">Telefono</a>
+        </article>
+    </div>
+    <br />
+    <br />
+    <div class="phone-container">
+        <phone class="phone"
+            #phone
+            [telefono]="telefono"
+            [callToken]="token"
+            [class.connected]="isConnected"
+            [class.disconnected]="isDisconnected"
+            [class.ringing]="isRinging"
+            [class.open]="isOpen"
+            >
+        </phone>
+        <br />
+        <div class="audio">
+            <audio #output class="output"></audio>
+            <canvas #visualizer class="visualizer"></canvas>
+        </div>
+    </div>
+</div>

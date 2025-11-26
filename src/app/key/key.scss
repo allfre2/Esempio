@@ -1,0 +1,23 @@
+.key {
+  flex: 0 0 calc(33.333% - 12px);
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #f7f7f9;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.key:hover {
+  background: #eee;
+}
+
+.key:active {
+  transform: scale(0.95);
+  background: #ddd;
+}

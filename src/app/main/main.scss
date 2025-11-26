@@ -1,0 +1,98 @@
+.phone-container {
+    align-items: center;
+}
+
+.phone {
+    border-radius: 20px;
+    display: block;
+    width: 600;
+    height: 500;
+}
+
+.disconnected {
+    border: 5px solid black;
+}
+
+.connected {
+    border: 5px solid lightgreen;
+}
+
+.ringing {
+    border: 5px solid lightgreen;
+    animation: ringingAnimation 1s infinite alternate;
+}
+
+.open {
+    border: 5px solid darkgreen;
+    animation: openAnimation .5s infinite alternate;
+}
+
+@keyframes ringingAnimation {
+    0% {
+        border: 1px solid lightgreen;
+        border-color: lightgreen;
+    }
+
+    25% {
+        border: 2px solid green;
+        border-color: green;
+    }
+
+    50% {
+        border: 3px solid darkgreen;
+        border-color: darkgreen;
+    }
+
+    75% {
+        border: 4px solid green;
+        border-color: green;
+    }
+
+    100% {
+        border: 5px solid lightgreen;
+        border-color: lightgreen;
+    }
+}
+
+@keyframes openAnimation {
+    0% {
+        border: 5px solid lightgreen;
+        border-color: lightgreen;
+    }
+
+    25% {
+        border: 5px solid green;
+        border-color: green;
+    }
+
+    50% {
+        border: 5px solid darkgreen;
+        border-color: darkgreen;
+    }
+
+    75% {
+        border: 5px solid green;
+        border-color: green;
+    }
+
+    100% {
+        border: 5px solid lightgreen;
+        border-color: lightgreen;
+    }
+}
+
+.audio {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  padding: 5px;
+}
+
+.output {
+    width: 150px;
+}
+
+.visualizer {
+  flex: 1;
+}
